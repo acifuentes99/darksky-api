@@ -6,8 +6,8 @@
   "scripts": {
 		"bundledev": "webpack --config webpack.config.development.js",
 		"package": "webpack --config webpack.config.production.js --progress --colors",
-    "start": "npm run package && node dist/server.js",
-    "build": "webpack --mode production"
+    "start": "node dist/server.js",
+    "build": "npm run package"
   },
   "author": "Andrés Cifuentes",
   "license": "ISC",
