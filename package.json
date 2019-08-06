@@ -4,8 +4,9 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-		"bundledev": "webpack --config webpack.config.development.js",
-		"package": "webpack --config webpack.config.production.js --progress --colors",
+		"webpack": "webpack --config webpack.config.development.js --mode=development",
+		"server": "nodemon --watch dist dist/server.js",
+		"package": "webpack --config webpack.config.production.js --mode=production --progress --colors",
     "start": "node dist/server.js",
     "build": "npm run package"
   },
